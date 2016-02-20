@@ -1,7 +1,7 @@
 server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
-	server_name viagensnaminhaterra.pt www.viagensnaminhaterra.pt;
+	server_name mydomain.pt www.mydomain.pt;
     
 	root /var/www/html;
     
@@ -30,15 +30,15 @@ server {
 server {
 	listen 443 ssl http2;
 	listen [::]:443 ssl http2;
-	server_name viagensnaminhaterra.pt www.viagensnaminhaterra.pt;
+	server_name mydomain.pt www.mydomain.pt;
 	
-	access_log   /var/log/nginx/example.com.access.log;
-	error_log    /var/log/nginx/example.com.error.log;
+	access_log   /var/log/nginx/access.log;
+	error_log    /var/log/nginx/error.log;
 	
 	root /var/www/html;
 	
-	ssl_certificate /etc/letsencrypt/live/viagensnaminhaterra.pt/fullchain.pem;
-	ssl_certificate_key /etc/letsencrypt/live/viagensnaminhaterra.pt/privkey.pem;
+	ssl_certificate /etc/letsencrypt/live/mydomain.pt/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/mydomain.pt/privkey.pem;
 	ssl_session_timeout 1d;
 	
 	add_header Strict-Transport-Security "max-age=31536000; includeSubDomains";
