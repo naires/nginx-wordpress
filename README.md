@@ -6,5 +6,7 @@ This files are not (yet) well organized and clean, but maybe can help who are lo
 
 Articles that helped me:
 https://deliciousbrains.com/hosting-wordpress-setup-secure-virtual-server/ (parts 4,6,7 and 8)
+
 https://easyengine.io/wordpress-nginx/tutorials/checklist/
+
 https://danielmiessler.com/blog/ultimate-speed-wordpress-nginx/#caching
